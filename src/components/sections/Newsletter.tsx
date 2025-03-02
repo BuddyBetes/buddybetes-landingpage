@@ -33,7 +33,7 @@ const Newsletter: React.FC = () => {
           
           <Reveal delay={3}>
             <div className="max-w-xl mx-auto bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-              <form action="https://buddybetes.us22.list-manage.com/subscribe/post?u=cfbc83a07a3542e2559bace72&amp;id=c81e3803c2&amp;f_id=0001cfe1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate space-y-6" target="_blank">
+              <form action="https://buddybetes.us22.list-manage.com/subscribe/post?u=cfbc83a07a3542e2559bace72&amp;id=c81e3803c2&amp;f_id=0001cfe1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank">
                 <div className="space-y-4">
                   <p className="text-xs text-right text-diabetes-muted">
                     <span className="text-diabetes-orange">*</span> indicates required
@@ -74,17 +74,17 @@ const Newsletter: React.FC = () => {
                   <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
                     <input type="text" name="b_cfbc83a07a3542e2559bace72_c81e3803c2" tabIndex={-1} />
                   </div>
-                </div>
-                
-                <div className="pt-2">
-                  <button 
-                    type="submit" 
-                    name="subscribe" 
-                    id="mc-embedded-subscribe" 
-                    className="w-full px-4 py-3 bg-primary hover:bg-primary/90 text-white font-medium rounded-lg shadow-md shadow-primary/20 transition-all duration-200"
-                  >
-                    Subscribe
-                  </button>
+                  
+                  <div className="pt-2">
+                    <button 
+                      type="submit" 
+                      name="subscribe" 
+                      id="mc-embedded-subscribe" 
+                      className="w-full px-4 py-3 bg-primary hover:bg-primary/90 text-white font-medium rounded-lg shadow-md shadow-primary/20 transition-all duration-200"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>

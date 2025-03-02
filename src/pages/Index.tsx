@@ -1,9 +1,10 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Hero from '@/components/sections/Hero';
 import Features from '@/components/sections/Features';
 import Team from '@/components/sections/Team';
+import Partners from '@/components/sections/Partners';
 import Newsletter from '@/components/sections/Newsletter';
 import { HeartPulse } from 'lucide-react';
 
@@ -14,6 +15,7 @@ const Index = () => {
       <Hero />
       <Features />
       <Team />
+      <Partners />
       <Newsletter />
       
       <footer className="py-12 bg-white border-t">
