@@ -8,27 +8,27 @@ const Partners: React.FC = () => {
   const partners = [
     {
       name: 'QBO Innovation Hub',
-      image: '/lovable-uploads/df530e00-6155-41f1-989b-ff8ca36be594.png',
+      image: '/qbo.png',
       alt: 'QBO Innovation Hub logo'
     },
     {
       name: 'Make Sense Asia',
-      image: '/lovable-uploads/1560c097-a806-4c07-b90f-b5760f88e719.png',
+      image: '/makesense.png',
       alt: 'Make Sense Asia logo'
     },
     {
       name: 'Startup Competition QC',
-      image: '/lovable-uploads/20c9a57b-be2b-4901-9d28-1e29380a478a.png',
+      image: '/startupqc.png',
       alt: 'Startup Competition QC logo'
     },
     {
       name: 'Leave a Nest Philippines',
-      image: '/lovable-uploads/ef656306-7025-4770-92f1-9562f59531a3.png',
+      image: '/leaveanest.png',
       alt: 'Leave a Nest Philippines logo'
     },
     {
       name: 'Ateneo Blue Nest',
-      image: '/lovable-uploads/3734c5ef-771b-4722-bcf3-53c207024491.png',
+      image: '/bluenest.png',
       alt: 'Ateneo Blue Nest logo'
     }
   ];
