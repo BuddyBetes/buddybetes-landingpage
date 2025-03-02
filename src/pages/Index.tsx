@@ -20,7 +20,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <HeartPulse className="h-6 w-6 text-primary" />
+              <img 
+                src="public/lovable-uploads/c17276b9-976a-4ce1-8175-39b9073c2367.png" 
+                alt="BuddyBetes Logo" 
+                className="h-8 w-8" 
+              />
               <span className="font-bold text-lg">BuddyBetes</span>
             </div>
             

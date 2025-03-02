@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Container from '@/components/ui/Container';
-import { HeartPulse, ArrowRight } from 'lucide-react';
+import { HeartPulse } from 'lucide-react';
 import Reveal from '@/components/ui/Reveal';
 
 const Hero: React.FC = () => {
@@ -36,13 +36,6 @@ const Hero: React.FC = () => {
             
             <Reveal delay={3}>
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-                <a 
-                  href="#" 
-                  className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md shadow-lg shadow-primary/20 inline-flex items-center space-x-2 transition-all duration-300 w-full sm:w-auto justify-center"
-                >
-                  <span>Get Started</span>
-                  <ArrowRight className="h-4 w-4" />
-                </a>
                 <a 
                   href="#features" 
                   className="inline-flex items-center justify-center space-x-2 hover:text-primary transition-colors w-full sm:w-auto"
