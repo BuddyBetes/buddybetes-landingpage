@@ -7,8 +7,8 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    --background: 0 0% 100%;
+    --foreground: 210 20% 16%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -16,30 +16,28 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 210 100% 50%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 148 54% 48%;
+    --primary-foreground: 148 54% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 148 30% 96%;
+    --secondary-foreground: 148 54% 30%;
 
-    --muted: 210 40% 96.1%;
+    --muted: 210 20% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 148 30% 94%;
+    --accent-foreground: 148 54% 30%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 148 54% 48%;
 
-    --radius: 0.8rem;
+    --radius: 1rem;
   }
-}
-
-@layer base {
+  
   * {
     @apply border-border;
   }
@@ -50,11 +48,15 @@
   }
   
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-diabetes-bg-light text-diabetes-text antialiased;
   }
   
   .glass-card {
-    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-lg;
+    @apply bg-white shadow-md rounded-[18px] border border-gray-100;
+  }
+  
+  .data-card {
+    @apply bg-white rounded-[18px] shadow-sm border border-gray-100 p-6;
   }
   
   .text-balance {
@@ -92,6 +94,19 @@
 
 .reveal-delay-4 {
   transition-delay: 0.4s;
+}
+
+/* Glucose Reading Colors */
+.reading-normal {
+  @apply text-diabetes-green;
+}
+
+.reading-high {
+  @apply text-diabetes-orange;
+}
+
+.reading-low {
+  @apply text-diabetes-blue;
 }
 
 /* Mailchimp Form Overrides */

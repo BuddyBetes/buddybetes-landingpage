@@ -18,14 +18,14 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 }) => {
   return (
     <div className={cn(
-      "glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-xl group",
+      "data-card transition-all duration-300 hover:shadow-md group",
       className
     )}>
-      <div className="w-12 h-12 mb-4 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-        <Icon className="h-6 w-6 text-primary" />
+      <div className="w-12 h-12 mb-4 bg-diabetes-green-light rounded-full flex items-center justify-center group-hover:bg-diabetes-green/10 transition-colors">
+        <Icon className="h-6 w-6 text-diabetes-green" />
       </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-muted-foreground">{description}</p>
+      <p className="text-diabetes-muted">{description}</p>
     </div>
   );
 };

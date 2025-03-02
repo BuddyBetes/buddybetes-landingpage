@@ -63,6 +63,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
+				diabetes: {
+					'green': '#36BE85',
+					'green-light': '#F2FCE2',
+					'green-dark': '#2A9D8F',
+					'blue': '#4C9AFF',
+					'orange': '#FF9A3D',
+					'text': '#333333',
+					'muted': '#707070',
+					'bg-light': '#F8FAFB'
+				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

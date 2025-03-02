@@ -10,8 +10,8 @@ interface TeamMemberProps {
 
 const TeamMember: React.FC<TeamMemberProps> = ({ name, role, image, bio }) => {
   return (
-    <div className="glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl">
-      <div className="aspect-[3/2] overflow-hidden">
+    <div className="data-card transition-all duration-300 hover:shadow-md">
+      <div className="aspect-[3/2] overflow-hidden rounded-xl mb-4">
         <img 
           src={image} 
           alt={name} 
@@ -19,10 +19,10 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, role, image, bio }) => {
           loading="lazy"
         />
       </div>
-      <div className="p-6">
+      <div>
         <h3 className="text-xl font-semibold mb-1">{name}</h3>
-        <p className="text-primary font-medium text-sm mb-4">{role}</p>
-        <p className="text-muted-foreground text-sm">{bio}</p>
+        <p className="text-diabetes-green font-medium text-sm mb-4">{role}</p>
+        <p className="text-diabetes-muted text-sm">{bio}</p>
       </div>
     </div>
   );
