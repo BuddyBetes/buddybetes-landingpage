@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
       <Container className="flex items-center justify-between">
         <a href="#" className="flex items-center space-x-2 group">
           <img 
-            src="/icon.png" 
+            src="https://buddybetes.com/icon.png" 
             alt="BuddyBetes Logo" 
             className="h-8 w-8" 
           />
