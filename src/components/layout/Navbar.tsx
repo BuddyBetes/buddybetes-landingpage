@@ -33,12 +33,6 @@ const Navbar: React.FC = () => {
           <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">Features</a>
           <a href="#team" className="text-sm font-medium hover:text-primary transition-colors">Team</a>
           <a href="#subscribe" className="text-sm font-medium hover:text-primary transition-colors">Subscribe</a>
-          <a 
-            href="#" 
-            className="bg-primary text-primary-foreground px-4 py-2 rounded-md hover:opacity-90 transition-opacity"
-          >
-            Get the App
-          </a>
         </nav>
 
         <button className="md:hidden">

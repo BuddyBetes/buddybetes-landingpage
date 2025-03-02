@@ -112,7 +112,7 @@
 /* Mailchimp Form Overrides */
 #mc_embed_signup {
   width: 100% !important;
-  max-width: 600px;
+  max-width: 100% !important;
   margin: 0 auto;
   background: transparent !important;
   font-family: 'Inter', sans-serif !important;
@@ -127,7 +127,7 @@
 }
 
 #mc_embed_signup #mc-embedded-subscribe {
-  @apply bg-primary text-primary-foreground rounded-md shadow-md px-6 py-2 hover:opacity-90 transition-opacity;
+  @apply bg-primary text-primary-foreground rounded-md shadow-md px-6 py-2 hover:opacity-90 transition-opacity w-full;
 }
 
 #mc_embed_signup .indicates-required {
