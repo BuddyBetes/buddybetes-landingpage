@@ -59,6 +59,11 @@ const Partners: React.FC = () => {
                   src={partner.image} 
                   alt={partner.name} 
                   className="max-h-full max-w-full object-contain"
+                  onError={(e) => {
+                    // Fallback to placeholder if image fails to load
+                    e.currentTarget.src = "/placeholder.svg";
+                    console.log(`Image for ${partner.name} failed to load, using placeholder`);
+                  }}
                 />
               </div>
             ))}
