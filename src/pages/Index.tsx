@@ -26,10 +26,6 @@ const Index = () => {
                 src="/icon.png" 
                 alt="BuddyBetes Logo" 
                 className="h-8 w-8"
-                onError={(e) => {
-                  console.log("Footer logo failed to load, using fallback icon");
-                  e.currentTarget.style.display = 'none';
-                }}
               />
               <HeartPulse className="h-6 w-6 text-primary" />
               <span className="font-bold text-lg">BuddyBetes</span>
