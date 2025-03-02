@@ -21,7 +21,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <img 
-                src="/public/favicon.ico" 
+                src="../public/favicon.ico" 
                 alt="BuddyBetes Logo" 
                 className="h-8 w-8" 
               />
