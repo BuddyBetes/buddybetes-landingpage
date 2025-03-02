@@ -59,7 +59,7 @@ const Partners: React.FC = () => {
             {partners.map((partner, index) => (
               <div 
                 key={index} 
-                className="h-24 flex items-center justify-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
+                className="h-32 md:h-40 w-full flex items-center justify-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
               >
                 <img 
                   src={partner.image} 
