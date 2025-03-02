@@ -33,70 +33,69 @@ const Newsletter: React.FC = () => {
           
           <Reveal delay={3}>
             <div className="max-w-xl mx-auto bg-white rounded-xl p-6 md:p-8 shadow-sm border border-gray-100">
-              {/* Using div with flex instead of form directly to have more control */}
-              <div className="w-full">
-                <form 
-                  action="https://buddybetes.us22.list-manage.com/subscribe/post?u=cfbc83a07a3542e2559bace72&amp;id=c81e3803c2&amp;f_id=0001cfe1f0" 
-                  method="post" 
-                  id="mc-embedded-subscribe-form" 
-                  name="mc-embedded-subscribe-form" 
-                  className="validate w-full" 
-                  target="_blank"
-                >
-                  <div className="space-y-4 w-full">
-                    <p className="text-xs text-right text-diabetes-muted">
+              <form 
+                action="https://buddybetes.us22.list-manage.com/subscribe/post?u=cfbc83a07a3542e2559bace72&amp;id=c81e3803c2&amp;f_id=0001cfe1f0" 
+                method="post" 
+                id="mc-embedded-subscribe-form" 
+                name="mc-embedded-subscribe-form" 
+                className="validate" 
+                target="_blank"
+              >
+                <div className="space-y-4">
+                  <div className="text-right">
+                    <p className="text-xs text-muted-foreground">
                       <span className="text-diabetes-orange">*</span> indicates required
                     </p>
-                    
-                    <div className="space-y-2 w-full">
-                      <label htmlFor="mce-EMAIL" className="block text-sm font-medium">
-                        Email Address <span className="text-diabetes-orange">*</span>
-                      </label>
-                      <input 
-                        type="email" 
-                        name="EMAIL" 
-                        id="mce-EMAIL" 
-                        className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200" 
-                        required 
-                      />
-                    </div>
-                    
-                    <div className="space-y-2 w-full">
-                      <label htmlFor="mce-FNAME" className="block text-sm font-medium">
-                        First Name <span className="text-diabetes-orange">*</span>
-                      </label>
-                      <input 
-                        type="text" 
-                        name="FNAME" 
-                        id="mce-FNAME" 
-                        className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200" 
-                        required 
-                      />
-                    </div>
-                    
-                    <div id="mce-responses" className="w-full">
-                      <div className="response hidden" id="mce-error-response"></div>
-                      <div className="response hidden" id="mce-success-response"></div>
-                    </div>
-                    
-                    {/* Hidden field for bot protection - do not remove */}
-                    <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-                      <input type="text" name="b_cfbc83a07a3542e2559bace72_c81e3803c2" tabIndex={-1} />
-                    </div>
-                    
-                    <div className="pt-2 w-full">
-                      <button 
-                        type="submit" 
-                        name="subscribe" 
-                        id="mc-embedded-subscribe" 
-                        className="w-full px-4 py-3 bg-primary hover:bg-primary/90 text-white font-medium rounded-lg shadow-md shadow-primary/20 transition-all duration-200"
-                      >
-                        Subscribe
-                      </button>
-                    </div>
                   </div>
-                </form>
-              </div>
+                  
+                  <div className="space-y-2">
+                    <label htmlFor="mce-EMAIL" className="block text-sm font-medium">
+                      Email Address <span className="text-diabetes-orange">*</span>
+                    </label>
+                    <input 
+                      type="email" 
+                      name="EMAIL" 
+                      id="mce-EMAIL" 
+                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200" 
+                      required 
+                    />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <label htmlFor="mce-FNAME" className="block text-sm font-medium">
+                      First Name <span className="text-diabetes-orange">*</span>
+                    </label>
+                    <input 
+                      type="text" 
+                      name="FNAME" 
+                      id="mce-FNAME" 
+                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200" 
+                      required 
+                    />
+                  </div>
+                  
+                  <div id="mce-responses" className="clear foot">
+                    <div className="response hidden" id="mce-error-response"></div>
+                    <div className="response hidden" id="mce-success-response"></div>
+                  </div>
+                  
+                  {/* Hidden field for bot protection - do not remove */}
+                  <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+                    <input type="text" name="b_cfbc83a07a3542e2559bace72_c81e3803c2" tabIndex={-1} />
+                  </div>
+                  
+                  <div className="w-full pt-2">
+                    <button 
+                      type="submit" 
+                      name="subscribe" 
+                      id="mc-embedded-subscribe" 
+                      className="w-full px-6 py-3 bg-primary hover:bg-primary/90 text-white font-medium rounded-lg shadow-md shadow-primary/20 transition-all duration-200"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </Reveal>
         </div>

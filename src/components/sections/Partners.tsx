@@ -4,26 +4,32 @@ import Container from '@/components/ui/Container';
 import Reveal from '@/components/ui/Reveal';
 
 const Partners: React.FC = () => {
+  // Hardcoded partner data with correctly formatted image paths
   const partners = [
     {
       name: 'QBO Innovation Hub',
-      image: '/lovable-uploads/df530e00-6155-41f1-989b-ff8ca36be594.png'
+      image: '/lovable-uploads/df530e00-6155-41f1-989b-ff8ca36be594.png',
+      alt: 'QBO Innovation Hub logo'
     },
     {
       name: 'Make Sense Asia',
-      image: '/lovable-uploads/1560c097-a806-4c07-b90f-b5760f88e719.png'
+      image: '/lovable-uploads/1560c097-a806-4c07-b90f-b5760f88e719.png',
+      alt: 'Make Sense Asia logo'
     },
     {
       name: 'Startup Competition QC',
-      image: '/lovable-uploads/20c9a57b-be2b-4901-9d28-1e29380a478a.png'
+      image: '/lovable-uploads/20c9a57b-be2b-4901-9d28-1e29380a478a.png',
+      alt: 'Startup Competition QC logo'
     },
     {
       name: 'Leave a Nest Philippines',
-      image: '/lovable-uploads/ef656306-7025-4770-92f1-9562f59531a3.png'
+      image: '/lovable-uploads/ef656306-7025-4770-92f1-9562f59531a3.png',
+      alt: 'Leave a Nest Philippines logo'
     },
     {
       name: 'Ateneo Blue Nest',
-      image: '/lovable-uploads/3734c5ef-771b-4722-bcf3-53c207024491.png'
+      image: '/lovable-uploads/3734c5ef-771b-4722-bcf3-53c207024491.png',
+      alt: 'Ateneo Blue Nest logo'
     }
   ];
 
@@ -57,7 +63,7 @@ const Partners: React.FC = () => {
               >
                 <img 
                   src={partner.image} 
-                  alt={partner.name} 
+                  alt={partner.alt} 
                   className="max-h-full max-w-full object-contain"
                   onError={(e) => {
                     // Fallback to placeholder if image fails to load
