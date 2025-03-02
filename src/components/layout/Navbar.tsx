@@ -25,7 +25,11 @@ const Navbar: React.FC = () => {
     >
       <Container className="flex items-center justify-between">
         <a href="#" className="flex items-center space-x-2 group">
-          <HeartPulse className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />
+        <img 
+                src="/public/favicon.ico" 
+                alt="BuddyBetes Logo" 
+                className="h-8 w-8" 
+          />
           <span className="text-xl font-bold tracking-tight">BuddyBetes</span>
         </a>
         
@@ -33,6 +37,9 @@ const Navbar: React.FC = () => {
           <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">Features</a>
           <a href="#team" className="text-sm font-medium hover:text-primary transition-colors">Team</a>
           <a href="#subscribe" className="text-sm font-medium hover:text-primary transition-colors">Subscribe</a>
+          <button className="w-full px-4 py-3 bg-primary hover:bg-primary/90 text-white font-medium  rounded-lg shadow-md shadow-primary/20 transition-all duration-200">
+            Coming soon
+          </button>
         </nav>
 
         <button className="md:hidden">

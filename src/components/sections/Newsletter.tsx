@@ -76,17 +76,18 @@ const Newsletter: React.FC = () => {
                   </div>
                 </div>
                 
-                <div className="pt-2">
+                
+              </form>
+              <div className="pt-2 ml-[-25px]">
                   <button 
                     type="submit" 
                     name="subscribe" 
                     id="mc-embedded-subscribe" 
-                    className="bg-primary hover:bg-primary/90 text-white font-medium px-6 py-3 rounded-lg shadow-md shadow-primary/20 transition-all duration-200 w-full"
+                    className="w-full px-4 py-3 bg-primary hover:bg-primary/90 text-white font-medium  rounded-lg shadow-md shadow-primary/20 transition-all duration-200"
                   >
                     Subscribe
                   </button>
                 </div>
-              </form>
             </div>
           </Reveal>
         </div>

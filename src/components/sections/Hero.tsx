@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
             
             <Reveal delay={1}>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6 text-balance">
-                Manage Your Diabetes <br /> With Confidence
+                Your BestFriend in Diabetes Care
               </h1>
             </Reveal>
             
@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
                   {/* Enhanced Glucose Tracking card with hover effect and pulse animation */}
                   <div 
                     className="absolute top-8 left-1/2 -translate-x-1/2 w-48 bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-white/30 
-                    hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer animate-float"
+                    hover:bg-white hover:shadow-xl transition-all duration-1500 transform hover:-translate-y-1 cursor-pointer animate-float"
                   >
                     <div className="flex items-center space-x-3 mb-2">
                       <div className="w-3 h-3 rounded-full bg-primary animate-pulse-subtle" />
@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
                   {/* Enhanced Daily Progress card with hover effect and different animation */}
                   <div 
                     className="absolute bottom-8 right-4 w-44 bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-white/30 
-                    hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:translate-x-1 cursor-pointer animate-float delay-300"
+                    hover:bg-white hover:shadow-xl transition-all duration-1500 transform hover:translate-x-1 cursor-pointer animate-float delay-300"
                   >
                     <div className="flex items-center space-x-3 mb-2">
                       <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse-subtle" />

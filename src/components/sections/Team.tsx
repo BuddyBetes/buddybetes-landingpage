@@ -10,7 +10,7 @@ const Team: React.FC = () => {
     {
       name: 'Princess Ventures',
       role: 'Solo Founder & CEO',
-      image: '/lovable-uploads/feb4051a-7f15-471a-b0d1-6ba8388fe33d.png',
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQEvMOg90qDuqQ/profile-displayphoto-shrink_800_800/B56ZT0kGYOHsAc-/0/1739269891956?e=1746662400&v=beta&t=3UeTFjvmYs3VlHwlUxvE0shA4mxL8N_e3DGcJ80IsaU',
       bio: 'With a passion for healthcare technology innovation, Princess founded BuddyBetes to revolutionize diabetes care and make management more accessible to everyone.',
       linkedin: 'https://www.linkedin.com/in/princessventures/'
     }
@@ -31,7 +31,7 @@ const Team: React.FC = () => {
           </Reveal>
           
           <Reveal delay={2}>
-            <p className="text-muted-foreground">
+            <p className="hidden">
               BuddyBetes combines medical expertise, technical innovation, and personal experience with diabetes to create the most effective management solution.
             </p>
           </Reveal>
