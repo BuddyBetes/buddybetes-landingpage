@@ -76,12 +76,12 @@ const Newsletter: React.FC = () => {
                   </div>
                 </div>
                 
-                <div className="pt-2">
+                <div className="pt-2 text-left">
                   <button 
                     type="submit" 
                     name="subscribe" 
                     id="mc-embedded-subscribe" 
-                    className="w-full bg-primary hover:bg-primary/90 text-white font-medium px-6 py-3 rounded-lg shadow-md shadow-primary/20 transition-all duration-200"
+                    className="bg-primary hover:bg-primary/90 text-white font-medium px-6 py-3 rounded-lg shadow-md shadow-primary/20 transition-all duration-200"
                   >
                     Subscribe
                   </button>
@@ -89,12 +89,6 @@ const Newsletter: React.FC = () => {
               </form>
             </div>
           </Reveal>
-          
-          {/* Mailchimp validation script */}
-          <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-          <script type="text/javascript" dangerouslySetInnerHTML={{ 
-            __html: `(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);`
-          }} />
         </div>
       </Container>
     </section>

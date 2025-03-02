@@ -10,7 +10,7 @@ const Team: React.FC = () => {
     {
       name: 'Princess Ventures',
       role: 'Solo Founder & CEO',
-      image: 'public/lovable-uploads/c27334dc-7117-4559-815d-569658be3dd9.png',
+      image: '/lovable-uploads/c27334dc-7117-4559-815d-569658be3dd9.png',
       bio: 'With a passion for healthcare technology innovation, Princess founded BuddyBetes to revolutionize diabetes care and make management more accessible to everyone.',
       linkedin: 'https://www.linkedin.com/in/princessventures/'
     }
