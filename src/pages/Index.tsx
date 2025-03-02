@@ -6,7 +6,6 @@ import Features from '@/components/sections/Features';
 import Team from '@/components/sections/Team';
 import Partners from '@/components/sections/Partners';
 import Newsletter from '@/components/sections/Newsletter';
-import { HeartPulse } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -27,7 +26,6 @@ const Index = () => {
                 alt="BuddyBetes Logo" 
                 className="h-8 w-8"
               />
-              <HeartPulse className="h-6 w-6 text-primary" />
               <span className="font-bold text-lg">BuddyBetes</span>
             </div>
             

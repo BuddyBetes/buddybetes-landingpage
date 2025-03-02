@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import Container from '@/components/ui/Container';
-import { HeartPulse } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,7 +29,6 @@ const Navbar: React.FC = () => {
             alt="BuddyBetes Logo" 
             className="h-8 w-8"
           />
-          <HeartPulse className="h-6 w-6 text-primary" />
           <span className="text-xl font-bold tracking-tight">BuddyBetes</span>
         </a>
         
