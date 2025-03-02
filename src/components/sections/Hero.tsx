@@ -61,20 +61,34 @@ const Hero: React.FC = () => {
                     loading="lazy"
                   />
                   
-                  <div className="absolute top-8 left-1/2 -translate-x-1/2 w-48 bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-white/30 animate-float">
+                  {/* Enhanced Glucose Tracking card with hover effect and pulse animation */}
+                  <div 
+                    className="absolute top-8 left-1/2 -translate-x-1/2 w-48 bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-white/30 
+                    hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer animate-float"
+                  >
                     <div className="flex items-center space-x-3 mb-2">
                       <div className="w-3 h-3 rounded-full bg-primary animate-pulse-subtle" />
                       <span className="text-sm font-medium">Glucose Tracking</span>
                     </div>
-                    <div className="h-10 bg-blue-50 rounded-md" />
+                    <div className="h-10 bg-blue-50 rounded-md flex items-center justify-center text-xs text-gray-500">
+                      Latest: 120 mg/dL
+                    </div>
                   </div>
                   
-                  <div className="absolute bottom-8 right-4 w-44 bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-white/30 animate-float delay-300">
+                  {/* Enhanced Daily Progress card with hover effect and different animation */}
+                  <div 
+                    className="absolute bottom-8 right-4 w-44 bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-white/30 
+                    hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:translate-x-1 cursor-pointer animate-float delay-300"
+                  >
                     <div className="flex items-center space-x-3 mb-2">
-                      <div className="w-3 h-3 rounded-full bg-primary animate-pulse-subtle" />
+                      <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse-subtle" />
                       <span className="text-sm font-medium">Daily Progress</span>
                     </div>
-                    <div className="h-10 bg-blue-50 rounded-md" />
+                    <div className="h-10 bg-blue-50 rounded-md flex items-center justify-center text-xs text-gray-500">
+                      <div className="w-full px-3">
+                        <div className="w-3/4 h-2 bg-primary rounded-full"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
