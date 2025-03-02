@@ -29,11 +29,6 @@ const Navbar: React.FC = () => {
             src="/icon.png" 
             alt="BuddyBetes Logo" 
             className="h-8 w-8"
-            onError={(e) => {
-              console.log("Logo failed to load, using fallback icon");
-              e.currentTarget.style.display = 'none';
-              // We'll show the HeartPulse icon as fallback
-            }}
           />
           <HeartPulse className="h-6 w-6 text-primary" />
           <span className="text-xl font-bold tracking-tight">BuddyBetes</span>
