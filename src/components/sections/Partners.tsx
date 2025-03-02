@@ -4,7 +4,7 @@ import Container from '@/components/ui/Container';
 import Reveal from '@/components/ui/Reveal';
 
 const Partners: React.FC = () => {
-  // Hardcoded partner data with correctly formatted image paths
+  // Correct partner data with absolute paths
   const partners = [
     {
       name: 'QBO Innovation Hub',

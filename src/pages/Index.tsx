@@ -23,10 +23,15 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <img 
-                src="https://buddybetes.com/icon.png" 
+                src="/icon.png" 
                 alt="BuddyBetes Logo" 
-                className="h-8 w-8" 
+                className="h-8 w-8"
+                onError={(e) => {
+                  console.log("Footer logo failed to load, using fallback icon");
+                  e.currentTarget.style.display = 'none';
+                }}
               />
+              <HeartPulse className="h-6 w-6 text-primary" />
               <span className="font-bold text-lg">BuddyBetes</span>
             </div>
             
